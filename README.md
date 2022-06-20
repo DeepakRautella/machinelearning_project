@@ -40,16 +40,31 @@ To check all version maintained by git
 git log
 To create version/commit all changes by git
 
-git commit -m "message"
-To send version/changes to github
+git commit -m "message"     (created a version)
+To send version/changes to github 
 
-git push origin main
+git push origin main      #origin main --- to push it to original main
 To check remote url
+
+# to check previous version
+git log
 
 git remote -v
 To setup CI/CD pipeline in heroku we need 3 information
 
 HEROKU_EMAIL = @gmail.com
+
 HEROKU_API_KEY = <>
+
 HEROKU_APP_NAME = demo-pipeline-ml
+
 ......
+Build Docker Image
+
+docker build -t <image name>:<tag name> .
+
+# to check docker images
+docker images
+
+#to run docker image
+
