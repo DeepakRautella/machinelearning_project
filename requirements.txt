@@ -1,4 +1,7 @@
 Flask
 gunicorn
 pytest
-
+sklearn
+pandas
+numpy
+-e .
