@@ -65,6 +65,12 @@ docker build -t <image name>:<tag name> .
 
 # to check docker images
 docker images
-
+____________
 #to run docker image
+___________
+#pip .... if not want to use---- write code in setup.py
+_____________
+python setup.py install
+______________
+-e . going to install folder where  __init__.py were created  you must have setup.py 
 
