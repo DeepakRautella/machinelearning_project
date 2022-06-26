@@ -73,4 +73,6 @@ _____________
 python setup.py install
 ______________
 -e . going to install folder where  __init__.py were created  you must have setup.py 
+-e . or file_package use any one
+
 
