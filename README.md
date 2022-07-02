@@ -75,4 +75,39 @@ ______________
 -e . going to install folder where  __init__.py were created  you must have setup.py 
 -e . or file_package use any one
 
+_______________________________________
+housing
+1)logger 2)exception 3)config         4)entity               5)pipeline                    6) component
+ login                      anything that has attribute   data injection                     data injection
+                                                      bringing data to the system           datavalidation       
+                                                       datavalidation                       data transformation
+                                                [schema validation,nullcheck,duplicate,       model training
+                                                outlers,domain value,data range,data drift]    model evaluation
+                                                      EDA(jupyter notebook)                     push model      
+                                                Data Transformation--pickle obj for fe
+                                                 Model training(model selection,model comp..
+                                                hyperparameter tunning)--pickle obj for model
+                                                Model evaluation(test dataset,model comp.(base model 
+                                                       and minimum expectation))
+                                                (saving object into a file is called serialization)
+                                                Push model (saving model into directory)
+                                                --collection of all component in a form flow 
+4)entity
+(artifact) anything generated during pipeline for example graph,pickle.......
+artifact defined for each component of pipeline .. output we get from each component
+data injection artifact: output gets from data injection component...it need some data to generate artifact
+data validation artifact : training test set..artifact will utilize by data transformation
+data transformation artifact
+model training artifact
+model evaluation artifact
+model pushing artifact
+ 
+datainjectionconfig:steps about how artifacts will get data to create artifact....
+datatransformationconfig 
+datavalidationconfig
+modeltrainingconfig
+modelevaluationconfig
+modelpushconfig
 
+3)config: all configration information we write into file... like schema info,yml file,database,.... config is going to read the file and structure from entity and provide config to pipeline when required...
+import all entity configs
