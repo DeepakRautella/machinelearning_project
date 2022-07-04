@@ -17,4 +17,4 @@ def index():
 
 
 if __name__=="__main__":
-    app.run()
+    app.run()   #debug=True for get complete error info while debug mode ..... used in projest testing
