@@ -1,8 +1,9 @@
+numpy
 Flask
 gunicorn
-pytest
 sklearn
 pandas
-numpy
-PYAML
-
+PyYAML
+evidently
+dill
+matplotlib
