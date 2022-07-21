@@ -1,7 +1,7 @@
 from housing.pipeline.pipeline import Pipeline
 from housing.exception import HousingException
 from housing.logger import logging
-from housing.config.configuration import Configuartion
+from housing.config.configuration import Configuration
 from housing.component.data_transformation import DataTransformation
 
 def main():

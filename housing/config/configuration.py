@@ -7,7 +7,7 @@ from housing.constant import *
 from housing.exception import HousingException
 
 
-class Configuartion:
+class Configuration:
 
     def __init__(self,
         config_file_path:str =CONFIG_FILE_PATH,

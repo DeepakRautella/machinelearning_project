@@ -4,11 +4,15 @@ from housing.entity.config_entity import DataValidationConfig
 from housing.entity.artifact_entity import DataIngestionArtifact,DataValidationArtifact
 import os,sys
 import pandas  as pd
+
 from evidently.model_profile import Profile
-from evidently.model_profile.sections import DataDriftProfileSection
+from evidently.model_profile.sections import DataDriftProfileSection   
+
 from evidently.dashboard import Dashboard
 from evidently.dashboard.tabs import DataDriftTab
 import json
+
+from housing.util.util import read_yaml_file
 
 class DataValidation:
     
@@ -75,7 +79,7 @@ class DataValidation:
             #3. Check column names
 
 
-            validation_status = True
+            
             return validation_status 
         except Exception as e:
             raise HousingException(e,sys) from e
@@ -88,7 +92,7 @@ class DataValidation:
 
             profile.calculate(train_df,test_df)
 
-            report = json.loads(profile.json())
+            report = json.loads(profile.json()) #to convert str into json format
 
             report_file_path = self.data_validation_config.report_file_path
             report_dir = os.path.dirname(report_file_path)
