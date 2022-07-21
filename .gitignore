@@ -13,6 +13,7 @@ develop-eggs/
 dist/
 downloads/
 saved_models/
+logs/
 eggs/
 .eggs/
 lib/
